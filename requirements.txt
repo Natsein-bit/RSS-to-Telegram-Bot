@@ -6,7 +6,7 @@ aiographfix==0.2.2
 # feed parsing
 feedparser==6.0.10  # feedparser@git+https://github.com/Rongronggg9/feedparser.git@develop
 listparser[lxml]==0.19
-pillow==9.5.0
+pillow==10.3.0
 beautifulsoup4==4.12.2
 lxml==4.9.2
 rapidfuzz==2.15.0
@@ -23,11 +23,11 @@ tortoise-orm[accel]==0.19.3
 aerich==0.6.3
 
 # network
-aiohttp[speedups]==3.8.4
+aiohttp==3.9.4
 aiohttp-socks==0.8.0
 aiohttp-retry==2.8.3
 python-socks[asyncio]==2.2.0
-dnspython[idna]==2.3.0
+dnspython==2.6.1
 url-normalize==1.4.3
 
 # utils
@@ -40,3 +40,6 @@ cachetools==5.3.0
 CJKwrap==2.2
 typing-extensions==4.5.0
 uvloop==0.17.0; python_version>="3.7" and sys_platform!='win32' and sys_platform!='cygwin' and sys_platform!='cli'
+fonttools>=4.43.0 # not directly required, pinned by Snyk to avoid a vulnerability
+numpy>=1.22.2 # not directly required, pinned by Snyk to avoid a vulnerability
+setuptools>=65.5.1 # not directly required, pinned by Snyk to avoid a vulnerability
